@@ -2,7 +2,7 @@ variable ENV {}
 variable AWS_REGION {}
 
 module "main-vpc" {
-  source = "terraform-aws-modules/vpc/aws"
+  source = "github.com/5a3o/terraform-aws-vpc.git"
 
   name = "sirius-vpc-${var.ENV}"
   cidr = "10.0.0.0/16"
